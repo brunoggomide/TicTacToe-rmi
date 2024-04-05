@@ -52,10 +52,10 @@ public class TTTGui extends JFrame {
                     button.setText(symbol == (int) 'X' ? "X" : "O");
                     refreshBoard();
                 } else {
-                    System.out.println("Movimento inválido.");
+                    JOptionPane.showMessageDialog(this, "Movimento inválido", "Erro", JOptionPane.ERROR_MESSAGE);
                 }
             } else {
-                System.out.println("Não é a sua vez.");
+                JOptionPane.showMessageDialog(this, "Não é a sua vez", "Erro", JOptionPane.ERROR_MESSAGE);
             }
         } catch (RemoteException ex) {
             ex.printStackTrace();
