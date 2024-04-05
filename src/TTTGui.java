@@ -15,7 +15,7 @@ public class TTTGui extends JFrame {
         this.playerID = playerID;
         this.symbol = symbol;
         initializeUI();
-        setTitle("Tic Tac Toe - Jogador " + playerID + " (" + (symbol == 1 ? 'X' : 'O') + ")");
+        setTitle("Tic Tac Toe - Jogador " + playerID + " (" + (symbol == (int) 'X' ? 'X' : 'O') + ")");
         setSize(300, 300);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
